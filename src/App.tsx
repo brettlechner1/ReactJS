@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import VideoPlayer from './VideoPlayer'
+import Comments from './Comments'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,7 +25,10 @@ function App() {
         </button>
       </div>
       <VideoPlayer></VideoPlayer>
-      
+      <hr style={{ borderTop: '1px solid', width: '100%' }} />
+      <div className='example-row'>
+        <Comments />
+      </div>
     </>
   )
 }

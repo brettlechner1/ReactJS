@@ -1,13 +1,20 @@
 import ReactPlayer from 'react-player'
 
-function VideoPlayer() {
-  
-  return (
-    <>
-      <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
-      <ReactPlayer url='https://vidro-bucket-a1.s3.us-east-2.amazonaws.com/videos/EARTH.mp4' />
-    </>
-  )
-}
+
+const VideoPlayer = () => {
+    return (
+      <div className="player-wrapper" style={{ position: 'relative', paddingTop: '56.25%' }}>
+        <ReactPlayer
+          url="https://vidro-bucket-a1.s3.us-east-2.amazonaws.com/videos/EARTH.mp4" // or a local path like '/videos/myvideo.mp4'
+          controls
+          width="100%"
+          height="100%"
+          style={{ position: 'absolute', top: 0, left: 0 }}
+        />
+      </div>
+    );
+  };
+
+
 
 export default VideoPlayer
