@@ -66,9 +66,9 @@ class Comments extends PureComponent {
       <CommentSection
           currentUser={{
             currentUserId: '01a',
-            currentUserImg:
-              'https://ui-avatars.com/api/name=ANON&background=random',
-            currentUserFullName: 'Anonymnous'
+            currentUserImg: 'https://ui-avatars.com/api/name=ANON&background=random',
+            currentUserFullName: 'Anonymnous',
+            currentUserProfile: ''
           }}
           placeHolder='Write your comment...'
           commentData={this.state.data}
